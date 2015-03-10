@@ -14,5 +14,36 @@
     <!-- TODO: Add UI elements here -->
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter some text"
+        android:padding="@dimen/text_spacing"
+        android:id="@+id/title"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+
+        android:inputType="numberDecimal"
+
+        android:hint="FEED ME TEXT OMNOM NOM"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Apply text"
+
+
+        />
 
 </LinearLayout>
