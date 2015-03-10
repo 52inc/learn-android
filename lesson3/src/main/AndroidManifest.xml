@@ -6,6 +6,30 @@
                  android:icon="@mipmap/ic_launcher"
                  android:theme="@style/AppTheme">
 
+        <!--
+            This is our activity definition and tells the application that we want this to be
+            the main screen when the user opens the app.
+
+            @param 'android:name' is the source path for the activity we want (root at com.ftinc.letslearn in this instance)
+            @param 'android:label' is the Title in the actionbar that we waht to give it
+        -->
+        <activity android:name=".MainActivity"
+                  android:label="@string/lesson3">
+
+            <!--
+                This is an Intent Filter. This is basically a definition that tells the application
+                that we want this screen, or activity, to catch these actions for this category.
+
+                Here we are telling the app that we want this screen to be shown when the user
+                opens the application. The category lets the Android OS know that we want this screen
+                to represent the icon in the App Drawer.
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
